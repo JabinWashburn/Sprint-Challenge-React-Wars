@@ -6,17 +6,21 @@ const Container = styled.div`
 `
 
 
-const Characters = props => {
+const Content = props => {
     return (
         <Container>
-            <h1>React Wars</h1>
             
+            <p>{props.name}</p>
+            <p>{props.birth_year}</p>
+            <p>{props.homeworld}</p>
+            <p>{props.films}</p>
+            <p>{props.starships}</p>
         </Container>
 
     )
 }
 
-export default Characters;
+export default Content;
 
 //             key={index}
 //             name={info.name}

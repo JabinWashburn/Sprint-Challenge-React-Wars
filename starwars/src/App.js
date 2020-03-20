@@ -17,7 +17,7 @@ export default function App () {
       .get('https://swapi.co/api/people/')
       .then(response => {
         console.log(response)
-        setInfo(response.data.result)
+        setInfo(response.data.results)
       })
       .catch(error => {
         console.log(error)
@@ -26,6 +26,7 @@ export default function App () {
 
   return (
     <div className="App">
+      <h1>React Wars</h1>
      {info.map (item =>{
         return <Content key={item.height} name = {item.name} birth = {item.birth_year} mass ={item.mass}/>
       })}
