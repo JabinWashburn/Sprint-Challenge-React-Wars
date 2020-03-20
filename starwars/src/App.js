@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import './App.css'
 import Content from './components/Content'
-import Characters from './components/Content'
 
 
 export default function App () {
